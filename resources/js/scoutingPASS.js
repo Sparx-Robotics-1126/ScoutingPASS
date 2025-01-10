@@ -24,7 +24,7 @@ var options = {
 
 // Must be filled in: e=event, m=match#, l=level(q,qf,sf,f), t=team#, r=robot(r1,r2,b1..), s=scouter
 //var requiredFields = ["e", "m", "l", "t", "r", "s", "as"];
-var requiredFields = ["e", "m", "l", "r", "s", "as"];
+var requiredFields = ["e", "m", "l", "r", "s"];
 
 function addTimer(table, idx, name, data) {
   var row = table.insertRow(idx);
@@ -798,7 +798,6 @@ function validateData() {
   var errStr = "";
   for (rf of requiredFields) {
     var thisRF = document.forms.scoutingForm[rf];
-	if (typeof myObj !== 'undefined') {
 		if (thisRF.value == "[]" || thisRF.value.length == 0) {
 		  if (rf == "as") {
 			rftitle = "Auto Start Position"
@@ -809,7 +808,6 @@ function validateData() {
 		  errStr += rf + ": " + rftitle + "\n";
 		  ret = false;
 		}
-	}
   }
   if (ret == false) {
     alert("Enter all required values\n" + errStr);
