@@ -85,6 +85,18 @@ var config_data = `
       "size": 20,
       "maxSize": 250
     },
+	{ "name": "Team Size",
+      "code": "ts",
+      "type": "text",
+      "size": 20,
+      "maxSize": 20
+    },
+	{ "name": "Favorite FIRST Experience/Memory",
+      "code": "fm",
+      "type": "text",
+      "size": 20,
+      "maxSize": 250
+    },
     { "name": "Comments",
       "code": "co",
       "type": "text",
