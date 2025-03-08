@@ -31,6 +31,23 @@ var config_data = `
       },
       "defaultValue": "o"
     },
+	{ "name": "Swerve Model",
+      "code": "swv",
+      "type": "radio",
+      "choices": {
+        "s": "Swerve Drive Specialties<br>",
+        "r": "REV<br>",
+        "c": "CTR<br>",
+        "o": "Other"
+      },
+      "defaultValue": "s"
+    },
+	{ "name": "Swerve Drive Specialties Model",
+      "code": "sds",
+      "type": "text",
+	  "size": 20,
+	  "maxSize": 50
+    },
     { "name": "Other Drivetrain",
       "code": "odt",
       "type": "text",

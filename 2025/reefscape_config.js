@@ -77,12 +77,16 @@ var config_data = `
       "code": "ac4",
       "type": "counter"
     },
-    { "name": "Processor Score",
+    { "name": "Algae Processor Score",
       "code": "aps",
       "type": "counter"
     },
     { "name": "Net Score",
       "code": "ans",
+      "type": "counter"
+    },
+	{ "name": "Algage Removed from Reef",
+      "code": "arr",
       "type": "counter"
     }
   ],
@@ -103,12 +107,16 @@ var config_data = `
       "code": "tc4",
       "type": "counter"
     },
-    { "name": "Processor Score",
+    { "name": "Algae Processor Score",
       "code": "tps",
       "type": "counter"
     },
     { "name": "Net Score",
       "code": "tns",
+      "type": "counter"
+    },
+	{ "name": "Algage Removed from Reef",
+      "code": "trr",
       "type": "counter"
     },
     { "name": "Pickup From",
@@ -122,8 +130,8 @@ var config_data = `
       },
       "defaultValue": "x"
     },
-    { "name": "Scored in<br>Opponent<br>Processor",
-      "code": "opp",
+	{ "name": "Attained Coopertition Pt",
+      "code": "tac",
       "type": "bool"
     }
   ],
@@ -146,17 +154,6 @@ var config_data = `
     }
   ],
   "postmatch": [
-    { "name": "Attained Coopertition Pt",
-      "code": "cop",
-      "type": "bool"
-    },
-    { "name": "Algae Left in Reef",
-      "code": "alr",
-      "type": "number",
-      "min": 0,
-      "max": 9,
-      "defaultValue": 0
-    },
     { "name": "Driver Skill",
       "code": "ds",
       "type": "radio",
